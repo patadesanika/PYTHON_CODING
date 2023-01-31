@@ -1,1 +1,12 @@
-
+import os
+def create(filename):
+    if(os.path.exists(filename)):
+        print("file is already existing")
+        return 
+    else:
+        f=open(filename,"w")
+def main():
+    name=input("enter a name of file to create")
+    create(name)
+if __name__=="__main__":
+    main()
